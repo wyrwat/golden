@@ -1,0 +1,56 @@
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('/images/Background_Image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+
+        .logo_container {
+            display: flex;
+            width: 100vw;
+            justify-content: space-around;
+
+            .logo {
+                // flex-grow: 1;
+                font-family: $sub-title;
+                color: $yellow;
+                font-size: 60px;
+            }
+
+            .hamburger {
+                align-self: center;
+                font-size: 50px;
+                color: $yellow;
+            }
+        }
+
+
+        .home {
+            list-style: none;
+
+            .menu {
+                margin: 10px 0;
+                display: none;
+
+                a {
+                    font-family: $main-font;
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 30px;
+                    text-transform: uppercase;
+
+
+                }
+            }
+        }
+    }
+
+}

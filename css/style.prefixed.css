@@ -344,8 +344,10 @@ template {
 }
 
 .jumbotron {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   height: 100vh;
   background-image: url("/images/Background_Image.jpg");
   background-position: center;
@@ -354,16 +356,21 @@ template {
 }
 
 .jumbotron .nav {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
   margin-top: 50px;
 }
 
 .jumbotron .nav .logo_container {
+  display: -ms-flexbox;
   display: flex;
   width: 100vw;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .jumbotron .nav .logo_container .logo {
@@ -373,7 +380,9 @@ template {
 }
 
 .jumbotron .nav .logo_container .hamburger {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-size: 50px;
   color: #fed136;
 }
@@ -394,5 +403,4 @@ template {
   font-size: 30px;
   text-transform: uppercase;
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.prefixed.css.map */
