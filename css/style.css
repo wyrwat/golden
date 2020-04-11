@@ -346,6 +346,7 @@ template {
 .jumbotron {
   display: flex;
   flex-direction: column;
+  text-align: center;
   height: 100vh;
   background-image: url("/images/Background_Image.jpg");
   background-position: center;
@@ -353,46 +354,87 @@ template {
   background-repeat: no-repeat;
 }
 
-.jumbotron .nav {
+.jumbotron .home-wrapper {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+}
+
+.jumbotron .home-wrapper .nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
 }
 
-.jumbotron .nav .logo_container {
+.jumbotron .home-wrapper .nav .logo_container {
   display: flex;
   width: 100vw;
   justify-content: space-around;
 }
 
-.jumbotron .nav .logo_container .logo {
+.jumbotron .home-wrapper .nav .logo_container .logo {
   font-family: "Oleo Script", cursive;
   color: #fed136;
-  font-size: 60px;
+  font-size: 40px;
+  font-weight: 200;
 }
 
-.jumbotron .nav .logo_container .hamburger {
+.jumbotron .home-wrapper .nav .logo_container .hamburger {
   align-self: center;
-  font-size: 50px;
+  font-size: 30px;
   color: #fed136;
+  cursor: pointer;
 }
 
-.jumbotron .nav .home {
+.jumbotron .home-wrapper .nav .home {
   list-style: none;
-}
-
-.jumbotron .nav .home .menu {
-  margin: 10px 0;
   display: none;
 }
 
-.jumbotron .nav .home .menu a {
+.jumbotron .home-wrapper .nav .home .menu {
+  margin: 5px 0;
+}
+
+.jumbotron .home-wrapper .nav .home .menu a {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   text-transform: uppercase;
+}
+
+.jumbotron .home-wrapper .nav .menu-on {
+  display: block;
+}
+
+.jumbotron .home-wrapper h2 {
+  font-family: "Roboto Slab", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 90px;
+}
+
+.jumbotron .home-wrapper h1 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.btn {
+  margin: 0 auto;
+  width: 240px;
+  height: 65px;
+  background-color: #fed136;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

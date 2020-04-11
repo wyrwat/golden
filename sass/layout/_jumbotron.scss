@@ -1,55 +1,79 @@
 .jumbotron {
     display: flex;
     flex-direction: column;
+    text-align: center;
     height: 100vh;
     background-image: url('/images/Background_Image.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
-    .nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
+    .home-wrapper {
+        background-color: rgba(0, 0, 0, .4);
+        height: 100vh;
 
-        .logo_container {
+        .nav {
             display: flex;
-            width: 100vw;
-            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
 
-            .logo {
-                // flex-grow: 1;
-                font-family: $sub-title;
-                color: $yellow;
-                font-size: 60px;
+            .logo_container {
+                display: flex;
+                width: 100vw;
+                justify-content: space-around;
+
+                .logo {
+                    font-family: $sub-title;
+                    color: $yellow;
+                    font-size: 40px;
+                    font-weight: 200;
+                }
+
+                .hamburger {
+                    align-self: center;
+                    font-size: 30px;
+                    color: $yellow;
+                    cursor: pointer;
+                }
             }
 
-            .hamburger {
-                align-self: center;
-                font-size: 50px;
-                color: $yellow;
+            .home {
+                list-style: none;
+                display: none;
+
+                .menu {
+                    margin: 5px 0;
+
+                    a {
+                        font-family: $main-font;
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            .menu-on {
+                display: block;
             }
         }
 
+        h2 {
+            font-family: $pharagraph;
+            color: #fff;
+            font-size: 20px;
+            margin-top: 90px;
+        }
 
-        .home {
-            list-style: none;
-
-            .menu {
-                margin: 10px 0;
-                display: none;
-
-                a {
-                    font-family: $main-font;
-                    text-decoration: none;
-                    color: #fff;
-                    font-size: 30px;
-                    text-transform: uppercase;
-
-
-                }
-            }
+        h1 {
+            color: #ffffff;
+            font-family: $main-font;
+            font-size: 25px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 70px;
         }
     }
 
