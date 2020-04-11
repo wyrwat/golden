@@ -364,6 +364,7 @@ template {
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  transition: .5s;
 }
 
 .jumbotron .home-wrapper .nav .logo_container {
@@ -387,12 +388,16 @@ template {
 }
 
 .jumbotron .home-wrapper .nav .home {
+  margin-top: 5px;
   list-style: none;
   display: none;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 1s;
 }
 
 .jumbotron .home-wrapper .nav .home .menu {
-  margin: 5px 0;
+  margin: 7px 0;
 }
 
 .jumbotron .home-wrapper .nav .home .menu a {
