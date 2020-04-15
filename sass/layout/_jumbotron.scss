@@ -31,12 +31,33 @@
                     font-weight: 200;
                 }
 
-                .hamburger {
-                    align-self: center;
-                    font-size: 30px;
-                    color: $yellow;
-                    cursor: pointer;
+                .burger-wrapper {
+                    display: flex;
+
+                    .fas {
+                        display: none;
+                    }
+
+                    .hamburger {
+                        align-self: center;
+                        font-size: 30px;
+                        color: $yellow;
+                        cursor: pointer;
+                    }
+
+                    .close {
+                        align-self: center;
+                        font-size: 30px;
+                        color: $yellow;
+                        cursor: pointer;
+                    }
+
+                    .show {
+                        display: block;
+                    }
                 }
+
+
             }
 
             .home {
@@ -108,9 +129,12 @@
                         font-size: 47px;
                     }
 
-                    .hamburger {
-                        font-size: 37px;
+                    .burger-wrapper {
+                        .hamburger {
+                            font-size: 37px;
+                        }
                     }
+
                 }
 
                 .home {

@@ -380,11 +380,30 @@ template {
   font-weight: 200;
 }
 
-.jumbotron .home-wrapper .nav .logo_container .hamburger {
+.jumbotron .home-wrapper .nav .logo_container .burger-wrapper {
+  display: flex;
+}
+
+.jumbotron .home-wrapper .nav .logo_container .burger-wrapper .fas {
+  display: none;
+}
+
+.jumbotron .home-wrapper .nav .logo_container .burger-wrapper .hamburger {
   align-self: center;
   font-size: 30px;
   color: #fed136;
   cursor: pointer;
+}
+
+.jumbotron .home-wrapper .nav .logo_container .burger-wrapper .close {
+  align-self: center;
+  font-size: 30px;
+  color: #fed136;
+  cursor: pointer;
+}
+
+.jumbotron .home-wrapper .nav .logo_container .burger-wrapper .show {
+  display: block;
 }
 
 .jumbotron .home-wrapper .nav .home {
@@ -439,7 +458,7 @@ template {
   .jumbotron .home-wrapper .nav .logo_container .logo {
     font-size: 47px;
   }
-  .jumbotron .home-wrapper .nav .logo_container .hamburger {
+  .jumbotron .home-wrapper .nav .logo_container .burger-wrapper .hamburger {
     font-size: 37px;
   }
   .jumbotron .home-wrapper .nav .home .menu a {
