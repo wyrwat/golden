@@ -357,6 +357,7 @@ template {
 .jumbotron .home-wrapper {
   background-color: rgba(0, 0, 0, 0.4);
   height: 100vh;
+  transition: 2s linear;
 }
 
 .jumbotron .home-wrapper .nav {
@@ -387,7 +388,7 @@ template {
 }
 
 .jumbotron .home-wrapper .nav .home {
-  margin-top: 5px;
+  margin-top: 15px;
   list-style: none;
   display: none;
   width: 100%;
@@ -410,7 +411,7 @@ template {
   display: block;
 }
 
-.jumbotron .home-wrapper h2 {
+.jumbotron .home-wrapper .welcome h2 {
   font-family: "Roboto Slab", sans-serif;
   color: #fff;
   font-weight: 200;
@@ -418,13 +419,49 @@ template {
   margin-top: 70px;
 }
 
-.jumbotron .home-wrapper h1 {
+.jumbotron .home-wrapper .welcome h1 {
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-size: 27px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+@media (min-width: 360px) {
+  .jumbotron .home-wrapper h2 {
+    font-size: 25px;
+    margin-top: 110px;
+  }
+}
+
+@media (min-width: 410px) {
+  .jumbotron .home-wrapper .nav .logo_container .logo {
+    font-size: 47px;
+  }
+  .jumbotron .home-wrapper .nav .logo_container .hamburger {
+    font-size: 37px;
+  }
+  .jumbotron .home-wrapper .nav .home .menu a {
+    font-size: 25px;
+  }
+  .jumbotron .home-wrapper .welcome h2 {
+    font-size: 27px;
+    margin-top: 110px;
+  }
+  .jumbotron .home-wrapper .welcome h1 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 320px) and (orientation: landscape) {
+  .jumbotron .home-wrapper .welcome h2 {
+    font-size: 25px;
+    margin-top: 30px;
+  }
+  .jumbotron .home-wrapper .welcome-show {
+    display: none;
+  }
 }
 
 .btn {

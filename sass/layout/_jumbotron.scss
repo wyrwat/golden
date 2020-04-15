@@ -11,6 +11,7 @@
     .home-wrapper {
         background-color: rgba(0, 0, 0, .4);
         height: 100vh;
+        transition: 2s linear;
 
         .nav {
             display: flex;
@@ -39,7 +40,7 @@
             }
 
             .home {
-                margin-top: 5px;
+                margin-top: 15px;
                 list-style: none;
                 display: none;
                 width: 100%;
@@ -63,22 +64,97 @@
             }
         }
 
-        h2 {
-            font-family: $pharagraph;
-            color: #fff;
-            font-weight: 200;
-            font-size: 20px;
-            margin-top: 70px;
+        .welcome {
+            h2 {
+                font-family: $pharagraph;
+                color: #fff;
+                font-weight: 200;
+                font-size: 20px;
+                margin-top: 70px;
+            }
+
+            h1 {
+                color: #ffffff;
+                font-family: $main-font;
+                font-size: 27px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+            }
         }
 
-        h1 {
-            color: #ffffff;
-            font-family: $main-font;
-            font-size: 27px;
-            font-weight: 700;
-            text-transform: uppercase;
-            margin-bottom: 30px;
+
+    }
+}
+
+@media (min-width: 360px) {
+    .jumbotron {
+        .home-wrapper {
+            h2 {
+                font-size: 25px;
+                margin-top: 110px;
+            }
+
         }
     }
+}
 
+@media (min-width: 410px) {
+    .jumbotron {
+        .home-wrapper {
+            .nav {
+                .logo_container {
+                    .logo {
+                        font-size: 47px;
+                    }
+
+                    .hamburger {
+                        font-size: 37px;
+                    }
+                }
+
+                .home {
+                    .menu {
+                        a {
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+
+            .welcome {
+                h2 {
+                    font-size: 27px;
+                    margin-top: 110px;
+                }
+
+                h1 {
+                    font-size: 32px;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media (min-width: 320px) and (orientation: landscape) {
+    .jumbotron {
+        .home-wrapper {
+            .nav {}
+
+            .welcome {
+                h2 {
+                    font-size: 25px;
+                    margin-top: 30px;
+                }
+            }
+
+            .welcome-show {
+                display: none;
+            }
+
+
+        }
+    }
 }
