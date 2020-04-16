@@ -567,4 +567,67 @@ template {
   background-color: #ecbc0f;
 }
 
+.services {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.services .services-title h1 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  margin: 25px 0 10px;
+}
+
+.services .services-title p {
+  color: grey;
+  font-family: "Droid Serif";
+  font-size: 16px;
+}
+
+.services .services-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px 25px;
+}
+
+.services .services-list-wrapper .fas {
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  color: #fed136;
+  font-size: 30px;
+}
+
+.services .services-list-wrapper h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 15px 0 10px;
+}
+
+.services .services-list-wrapper p {
+  color: grey;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.services .services-list-wrapper .service {
+  margin-top: 30px;
+}
+
+.services .services-list-wrapper .e-commerce .fa-shopping-basket {
+  padding: 14px;
+}
+
+.services .services-list-wrapper .responsive-web .fa-laptop {
+  padding: 16px 12px 16px 14px;
+}
+
+.services .services-list-wrapper .web-security .fa-lock {
+  padding: 12px 20px 17px 19px;
+}
+
 /*# sourceMappingURL=style.css.map */
