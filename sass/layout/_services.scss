@@ -1,9 +1,10 @@
 .services {
     display: flex;
     flex-direction: column;
-    text-align: center;
 
     .services-title {
+        text-align: center;
+
         h1 {
             text-transform: uppercase;
             font-family: $main-font;
@@ -46,6 +47,7 @@
         }
 
         .service {
+            text-align: center;
             margin-top: 30px;
         }
 
@@ -93,8 +95,6 @@
             p {
                 font-size: 30px;
             }
-
-
         }
 
         .services-list-wrapper {
@@ -110,6 +110,72 @@
 
             .service {
                 margin-top: 40px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .services {
+        max-width: 1402px;
+        margin: 0 auto;
+
+        .services-title {
+            h1 {
+                font-size: 40px;
+                margin: 120px 0 19px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        .services-list-wrapper {
+            flex-direction: row;
+            margin: 45px 0 118px;
+
+            .fas {
+                border: 3px solid $yellow;
+                border-radius: 50%;
+                color: $yellow;
+                font-size: 30px;
+            }
+
+            h3 {
+                font-family: $main-font;
+                font-size: 18px;
+                font-weight: 700;
+                margin: 15px 0 10px;
+            }
+
+            p {
+                color: grey;
+                font-family: $pharagraph;
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            .service {
+                margin: 30px 25px 0;
+            }
+
+            .e-commerce {
+                .fa-shopping-basket {
+                    padding: 16px;
+                }
+            }
+
+            .responsive-web {
+                .fa-laptop {
+                    padding: 16px 14px;
+                }
+            }
+
+            .web-security {
+                .fa-lock {
+                    padding: 16px 21px;
+                }
             }
         }
     }

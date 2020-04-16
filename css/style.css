@@ -570,6 +570,9 @@ template {
 .services {
   display: flex;
   flex-direction: column;
+}
+
+.services .services-title {
   text-align: center;
 }
 
@@ -615,6 +618,7 @@ template {
 }
 
 .services .services-list-wrapper .service {
+  text-align: center;
   margin-top: 30px;
 }
 
@@ -657,6 +661,54 @@ template {
   }
   .services .services-list-wrapper .service {
     margin-top: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services {
+    max-width: 1402px;
+    margin: 0 auto;
+  }
+  .services .services-title h1 {
+    font-size: 40px;
+    margin: 120px 0 19px;
+  }
+  .services .services-title p {
+    font-size: 20px;
+  }
+  .services .services-list-wrapper {
+    flex-direction: row;
+    margin: 45px 0 118px;
+  }
+  .services .services-list-wrapper .fas {
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    color: #fed136;
+    font-size: 30px;
+  }
+  .services .services-list-wrapper h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 15px 0 10px;
+  }
+  .services .services-list-wrapper p {
+    color: grey;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .services .services-list-wrapper .service {
+    margin: 30px 25px 0;
+  }
+  .services .services-list-wrapper .e-commerce .fa-shopping-basket {
+    padding: 16px;
+  }
+  .services .services-list-wrapper .responsive-web .fa-laptop {
+    padding: 16px 14px;
+  }
+  .services .services-list-wrapper .web-security .fa-lock {
+    padding: 16px 21px;
   }
 }
 
