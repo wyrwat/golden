@@ -678,6 +678,7 @@ template {
   }
   .services .services-list-wrapper {
     flex-direction: row;
+    justify-content: space-around;
     margin: 45px 0 118px;
   }
   .services .services-list-wrapper .fas {
@@ -693,22 +694,12 @@ template {
     margin: 15px 0 10px;
   }
   .services .services-list-wrapper p {
-    color: grey;
-    font-family: "Roboto Slab", sans-serif;
     font-size: 14px;
-    font-weight: 400;
+    line-height: 1.4;
   }
   .services .services-list-wrapper .service {
-    margin: 30px 25px 0;
-  }
-  .services .services-list-wrapper .e-commerce .fa-shopping-basket {
-    padding: 16px;
-  }
-  .services .services-list-wrapper .responsive-web .fa-laptop {
-    padding: 16px 14px;
-  }
-  .services .services-list-wrapper .web-security .fa-lock {
-    padding: 16px 21px;
+    margin: 30px 0;
+    width: 25%;
   }
 }
 
