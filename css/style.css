@@ -578,7 +578,7 @@ template {
   font-family: "Montserrat", sans-serif;
   font-size: 27px;
   font-weight: 700;
-  margin: 25px 0 10px;
+  margin: 40px 0 10px;
 }
 
 .services .services-title p {
@@ -590,7 +590,7 @@ template {
 .services .services-list-wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 40px 25px;
+  margin: 0 40px 40px;
 }
 
 .services .services-list-wrapper .fas {
@@ -619,15 +619,45 @@ template {
 }
 
 .services .services-list-wrapper .e-commerce .fa-shopping-basket {
-  padding: 14px;
+  padding: 16px;
 }
 
 .services .services-list-wrapper .responsive-web .fa-laptop {
-  padding: 16px 12px 16px 14px;
+  padding: 16px 14px;
 }
 
 .services .services-list-wrapper .web-security .fa-lock {
-  padding: 12px 20px 17px 19px;
+  padding: 16px 21px;
+}
+
+@media (min-width: 360px) {
+  .services .services-title p {
+    font-size: 19px;
+  }
+  .services .services-list-wrapper p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .services .services-title h1 {
+    font-size: 40px;
+  }
+  .services .services-title p {
+    font-size: 30px;
+  }
+  .services .services-list-wrapper {
+    margin: 0 125px 40px;
+  }
+  .services .services-list-wrapper h3 {
+    font-size: 30px;
+  }
+  .services .services-list-wrapper p {
+    font-size: 25px;
+  }
+  .services .services-list-wrapper .service {
+    margin-top: 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
