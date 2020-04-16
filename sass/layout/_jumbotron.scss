@@ -3,6 +3,8 @@
     flex-direction: column;
     text-align: center;
     height: 100vh;
+    max-width: 1402px;
+    margin: 0 auto;
     background-image: url('/images/Background_Image.jpg');
     background-position: center;
     background-size: cover;
@@ -11,7 +13,6 @@
     .home-wrapper {
         background-color: rgba(0, 0, 0, .4);
         height: 100vh;
-        transition: 2s linear;
 
         .nav {
             display: flex;
@@ -47,7 +48,7 @@
 
                     .close {
                         align-self: center;
-                        font-size: 30px;
+                        font-size: 35px;
                         color: $yellow;
                         cursor: pointer;
                     }
@@ -120,7 +121,7 @@
     }
 }
 
-@media (min-width: 410px) {
+@media (min-width: 425px) {
     .jumbotron {
         .home-wrapper {
             .nav {
@@ -131,10 +132,13 @@
 
                     .burger-wrapper {
                         .hamburger {
-                            font-size: 37px;
+                            font-size: 38px;
+                        }
+
+                        .close {
+                            font-size: 45px;
                         }
                     }
-
                 }
 
                 .home {
@@ -156,17 +160,13 @@
                     font-size: 32px;
                 }
             }
-
-
         }
     }
 }
 
-@media (min-width: 320px) and (orientation: landscape) {
+@media (orientation: landscape) and (max-width: 1023px) {
     .jumbotron {
         .home-wrapper {
-            .nav {}
-
             .welcome {
                 h2 {
                     font-size: 25px;
@@ -177,8 +177,84 @@
             .welcome-show {
                 display: none;
             }
-
-
         }
     }
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        .home-wrapper {
+            .welcome {
+                h2 {
+                    font-size: 33px;
+                    margin-top: 110px;
+                }
+
+                h1 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .jumbotron {
+        background-size: cover;
+
+        .home-wrapper {
+            .nav {
+                flex-direction: row;
+
+                .logo_container {
+                    display: flex;
+                    width: 100vw;
+                    justify-content: space-around;
+
+                    .logo {
+                        font-size: 40px;
+                        margin-left: -200px;
+                    }
+
+                    .burger-wrapper {
+                        display: none;
+                    }
+                }
+
+                .home {
+                    display: flex;
+                    margin-top: 15px;
+                    list-style: none;
+                    width: 100%;
+                    background-color: transparent;
+
+                    .menu {
+                        margin: 7px 0;
+
+                        a {
+                            font-size: 14px;
+                            padding: 20px;
+                        }
+
+                        a:hover {
+                            color: $yellow;
+                        }
+                    }
+                }
+            }
+
+            .welcome {
+                h2 {
+                    font-size: 40px;
+                    margin-top: 212px;
+                }
+
+                h1 {
+                    font-size: 75px;
+                    margin-top: 52px;
+                }
+            }
+        }
+    }
+
 }
