@@ -1,14 +1,56 @@
 .portfolio-wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    // justify-content: center;
+    margin: 0 auto;
     background-color: #f7f7f7;
 
 
     .title-wrapper {
         margin-top: 40px;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // width: 50%;
+    }
+
+    .gallery-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        margin: 76px auto 120px;
+        width: 100%;
+        height: 100%;
+        min-height: 850px;
+        max-width: 941px;
+
+
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            align-items: center;
+            margin: 10px auto;
+
+            a {
+                .image {
+                    width: 291px;
+                    height: 300px;
+                }
+            }
+
+            h3 {
+                color: #333333;
+                font-family: $main-font;
+                font-size: 18px;
+                font-weight: 700;
+                padding-top: 29px;
+                ;
+            }
+
+            p {
+                color: #737373;
+                font-family: "Droid Serif";
+                font-size: 16px;
+                padding-bottom: 20px;
+            }
+        }
     }
 }

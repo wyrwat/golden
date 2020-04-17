@@ -590,6 +590,7 @@ template {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .sub-title {
@@ -765,12 +766,60 @@ template {
 .portfolio-wrapper {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0 auto;
   background-color: #f7f7f7;
 }
 
 .portfolio-wrapper .title-wrapper {
   margin-top: 40px;
+}
+
+.portfolio-wrapper .gallery-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  margin: 76px auto 120px;
+  width: 100%;
+  height: 100%;
+  min-height: 850px;
+  max-width: 941px;
+}
+
+.portfolio-wrapper .gallery-wrapper .gallery-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  background-color: #fff;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 10px auto;
+}
+
+.portfolio-wrapper .gallery-wrapper .gallery-item a .image {
+  width: 291px;
+  height: 300px;
+}
+
+.portfolio-wrapper .gallery-wrapper .gallery-item h3 {
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 29px;
+}
+
+.portfolio-wrapper .gallery-wrapper .gallery-item p {
+  color: #737373;
+  font-family: "Droid Serif";
+  font-size: 16px;
+  padding-bottom: 20px;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
