@@ -567,6 +567,43 @@ template {
   background-color: #ecbc0f;
 }
 
+.title {
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sub-title {
+  color: grey;
+  font-family: "Droid Serif";
+  font-size: 16px;
+  text-align: center;
+}
+
+@media (min-width: 360px) {
+  .sub-title {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+  .sub-title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sub-title {
+    font-size: 20px;
+  }
+}
+
 .services {
   display: flex;
   flex-direction: column;
@@ -636,7 +673,7 @@ template {
 
 @media (min-width: 360px) {
   .services .services-title p {
-    font-size: 19px;
+    font-size: 16px;
   }
   .services .services-list-wrapper p {
     font-size: 16px;
@@ -701,6 +738,16 @@ template {
     margin: 30px 0;
     width: 25%;
   }
+}
+
+.portfolio-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7f7;
+}
+
+.portfolio-wrapper .title-wrapper {
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

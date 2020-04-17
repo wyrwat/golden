@@ -1,13 +1,38 @@
 .title {
     color: #222222;
     font-family: $main-font;
-    font-size: 40px;
+    font-size: 27px;
     font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .sub-title {
     color: grey;
     font-family: "Droid Serif";
     font-size: 16px;
+    text-align: center;
+}
+
+@media (min-width: 360px) {
+    .sub-title {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 40px;
+    }
+
+    .sub-title {
+        font-size: 30px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .sub-title {
+        font-size: 20px;
+    }
 }
