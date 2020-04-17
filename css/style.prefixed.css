@@ -786,10 +786,10 @@ template {
   -ms-flex-line-pack: justify;
       align-content: space-between;
   margin: 76px auto 120px;
-  width: 100%;
   height: 100%;
   min-height: 850px;
   max-width: 941px;
+  width: 100%;
 }
 
 .portfolio-wrapper .gallery-wrapper .gallery-item {
@@ -808,6 +808,10 @@ template {
   height: 300px;
 }
 
+.portfolio-wrapper .gallery-wrapper .gallery-item a .image:hover {
+  opacity: .8;
+}
+
 .portfolio-wrapper .gallery-wrapper .gallery-item h3 {
   color: #333333;
   font-family: "Montserrat", sans-serif;
@@ -821,5 +825,11 @@ template {
   font-family: "Droid Serif";
   font-size: 16px;
   padding-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+  .portfolio-wrapper .title-wrapper {
+    margin-top: 120px;
+  }
 }
 /*# sourceMappingURL=style.prefixed.css.map */
