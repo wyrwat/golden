@@ -350,7 +350,6 @@ template {
       flex-direction: column;
   text-align: center;
   height: 100vh;
-  max-width: 1402px;
   margin: 0 auto;
   background-image: url("../images/Background_Image.jpg");
   background-position: center;
