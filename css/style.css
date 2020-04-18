@@ -757,7 +757,7 @@ template {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  margin: 76px auto 120px;
+  margin: 76px auto 40px;
   height: 100%;
   min-height: 850px;
   max-width: 941px;
@@ -800,6 +800,58 @@ template {
   .portfolio-wrapper .title-wrapper {
     margin-top: 120px;
   }
+  .portfolio-wrapper .gallery-wrapper {
+    margin-bottom: 120px;
+  }
+}
+
+.about-us-wrapper .title-wrapper {
+  margin-top: 40px;
+}
+
+.about-us-wrapper .about-us-item {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 10px 0;
+}
+
+.about-us-wrapper .about-us-item .text-align-right {
+  text-align: right;
+}
+
+.about-us-wrapper .about-us-item .text-align-left {
+  text-align: left;
+}
+
+.about-us-wrapper .about-us-item .description {
+  align-self: center;
+  width: 40%;
+  justify-self: left;
+}
+
+.about-us-wrapper .about-us-item .description h2 {
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.about-us-wrapper .about-us-item .description h3 {
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+.about-us-wrapper .about-us-item .description p {
+  color: grey;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.about-us-wrapper .about-us-img {
+  align-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */

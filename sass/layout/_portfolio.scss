@@ -13,7 +13,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: space-between;
-        margin: 76px auto 120px;
+        margin: 76px auto 40px;
         height: 100%;
         min-height: 850px;
         max-width: 941px;
@@ -60,6 +60,10 @@
     .portfolio-wrapper {
         .title-wrapper {
             margin-top: 120px;
+        }
+
+        .gallery-wrapper {
+            margin-bottom: 120px;
         }
     }
 }

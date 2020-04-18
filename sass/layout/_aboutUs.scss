@@ -1,0 +1,51 @@
+.about-us-wrapper {
+    .title-wrapper {
+        margin-top: 40px;
+    }
+
+
+    .about-us-item {
+        display: flex;
+        justify-content: space-around;
+        margin: 40px 10px 0;
+
+        .text-align-right {
+            text-align: right;
+        }
+
+        .text-align-left {
+            text-align: left;
+        }
+
+        .description {
+            align-self: center;
+            width: 40%;
+            justify-self: left;
+
+            h2 {
+                color: #222222;
+                font-family: $main-font;
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+
+            h3 {
+                color: #222222;
+                font-family: $main-font;
+                font-size: 12px;
+            }
+
+            p {
+                color: grey;
+                font-family: $pharagraph;
+                font-size: 12px;
+                font-weight: 400;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .about-us-img {
+        align-self: center;
+    }
+}
