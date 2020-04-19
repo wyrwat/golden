@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    // margin: 0 auto;
 
     img {
         transform: scale(0.8);
@@ -18,7 +17,7 @@
 
         img {
             width: auto;
-            padding: 67px 40px; // transform: scale(0.4);
+            padding: 53px 40px;
         }
     }
 }
