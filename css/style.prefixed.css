@@ -1147,4 +1147,32 @@ template {
     width: 55%;
   }
 }
+
+.logos {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.logos img {
+  transform: scale(0.8);
+  width: 40%;
+  padding: 10px 0 10px;
+}
+
+@media (min-width: 1024px) {
+  .logos {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .logos img {
+    width: auto;
+    padding: 67px 40px;
+  }
+}
 /*# sourceMappingURL=style.prefixed.css.map */

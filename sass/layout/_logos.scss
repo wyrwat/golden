@@ -1,0 +1,24 @@
+.logos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    // margin: 0 auto;
+
+    img {
+        transform: scale(0.8);
+        width: 40%;
+        padding: 10px 0 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logos {
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        img {
+            width: auto;
+            padding: 67px 40px; // transform: scale(0.4);
+        }
+    }
+}
