@@ -982,13 +982,24 @@ template {
   flex-direction: column;
   text-align: center;
   width: 100%;
+  background-color: #f9f9f9;
+}
+
+.team-wrapper .title-wrapper {
+  margin-top: 40px;
 }
 
 .team-wrapper .team-member-wrapper {
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin: 0 auto;
+  margin: 40px auto 0;
+}
+
+.team-wrapper .team-member-wrapper .team-member img {
+  width: 221px;
+  height: 221px;
+  border-radius: 50%;
 }
 
 .team-wrapper .team-member-wrapper .team-member h4 {
@@ -996,6 +1007,7 @@ template {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 700;
+  margin-top: 20px;
 }
 
 .team-wrapper .team-member-wrapper .team-member p {
@@ -1003,12 +1015,14 @@ template {
   font-family: "Roboto Slab", sans-serif;
   font-size: 14px;
   font-weight: 400;
+  margin-top: 5px;
 }
 
 .team-wrapper .team-member-wrapper .team-member .social-media {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  margin: 5px auto 25px;
 }
 
 .team-wrapper .team-member-wrapper .team-member .social-media .fab {
@@ -1036,6 +1050,16 @@ template {
   position: relative;
   top: calc(50% - 8px);
   left: calc(50% - 6px);
+}
+
+.team-wrapper .team-member-wrapper .team-member .social-media .fab:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.team-wrapper .title-wrapper-team {
+  margin: 0 auto 40px;
+  width: 80%;
 }
 
 /*# sourceMappingURL=style.css.map */
