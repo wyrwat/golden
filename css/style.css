@@ -1065,6 +1065,12 @@ template {
   .team-wrapper .title-wrapper {
     margin-top: 120px;
   }
+  .team-wrapper .team-member-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 75%;
+    margin-top: 83px;
+  }
   .team-wrapper .team-member-wrapper .img-zoom {
     overflow: hidden;
     cursor: pointer;
@@ -1084,7 +1090,7 @@ template {
     background-color: #000;
   }
   .team-wrapper .title-wrapper-team {
-    margin: 0 auto 117px;
+    margin: 50px auto 117px;
     width: 55%;
   }
 }
