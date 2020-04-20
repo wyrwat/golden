@@ -562,45 +562,58 @@ template {
   cursor: pointer;
 }
 
+.btn:focus {
+  outline: 0;
+}
+
 .btn:hover {
   background-color: #ecbc0f;
 }
 
-.title {
+.title-wrapper .title {
   color: #222222;
   font-family: "Montserrat", sans-serif;
   font-size: 27px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 5px;
+  margin: 40px 0 5px;
 }
 
-.sub-title {
+.title-wrapper .title-white {
+  color: #ffffff;
+}
+
+.title-wrapper .sub-title {
   color: grey;
   font-family: "Droid Serif";
   font-size: 16px;
   text-align: center;
 }
 
+.title-wrapper .title-grey {
+  color: #999;
+}
+
 @media (min-width: 360px) {
-  .sub-title {
+  .title-wrapper .sub-title {
     font-size: 19px;
   }
 }
 
 @media (min-width: 768px) {
-  .title {
+  .title-wrapper .title {
     font-size: 40px;
   }
-  .sub-title {
-    font-size: 30px;
+  .title-wrapper .sub-title {
+    font-size: 17px;
+    letter-spacing: 1px;
   }
 }
 
-@media (min-width: 768px) {
-  .sub-title {
-    font-size: 20px;
+@media (min-width: 1024px) {
+  .title-wrapper .title {
+    margin: 112px 0 5px;
   }
 }
 
@@ -1115,6 +1128,117 @@ template {
   .logos img {
     width: auto;
     padding: 53px 40px;
+  }
+}
+
+.contact-us-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/images/Map.png);
+  background-position: 5% 5%;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-color: #222222;
+}
+
+.contact-us-wrapper .form-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 46px 0 29px;
+}
+
+.contact-us-wrapper .form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us-wrapper .form-wrapper form .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us-wrapper .form-wrapper form .contact input {
+  width: 240px;
+  height: 40px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+.contact-us-wrapper .form-wrapper form .contact input::placeholder {
+  color: #bbbbbb;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+
+.contact-us-wrapper .form-wrapper form .message {
+  display: flex;
+}
+
+.contact-us-wrapper .form-wrapper form .message textarea {
+  height: 210px;
+  width: 240px;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+}
+
+.contact-us-wrapper .form-wrapper form .message textarea::placeholder {
+  color: #bbbbbb;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px 20px;
+}
+
+@media (min-width: 768px) {
+  .contact-us-wrapper .form-wrapper {
+    margin: 46px auto 29px;
+    width: 70%;
+  }
+  .contact-us-wrapper .form-wrapper form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .contact-us-wrapper .form-wrapper form .contact {
+    justify-content: space-between;
+    height: 210px;
+  }
+  .contact-us-wrapper .form-wrapper form .contact label {
+    display: none;
+  }
+  .contact-us-wrapper .form-wrapper form .contact input {
+    height: 50px;
+  }
+  .contact-us-wrapper .btn-message {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-us-wrapper .form-wrapper {
+    margin: 46px auto 29px;
+  }
+  .contact-us-wrapper .form-wrapper form {
+    justify-content: center;
+  }
+  .contact-us-wrapper .form-wrapper form .contact {
+    margin-right: 50px;
+  }
+  .contact-us-wrapper .form-wrapper form .contact input {
+    width: 350px;
+  }
+  .contact-us-wrapper .form-wrapper form .message textarea {
+    width: 350px;
+  }
+  .contact-us-wrapper .btn-message {
+    margin-bottom: 40px;
   }
 }
 

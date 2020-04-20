@@ -1,39 +1,63 @@
-.title {
-    color: #222222;
-    font-family: $main-font;
-    font-size: 27px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 5px;
-}
+.title-wrapper {
 
-.sub-title {
-    color: grey;
-    font-family: "Droid Serif";
-    font-size: 16px;
-    text-align: center;
+    .title {
+        color: #222222;
+        font-family: $main-font;
+        font-size: 27px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 40px 0 5px;
+    }
+
+    .title-white {
+        color: #ffffff
+    }
+
+
+
+    .sub-title {
+        color: grey;
+        font-family: "Droid Serif";
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .title-grey {
+        color: #999;
+    }
 }
 
 @media (min-width: 360px) {
-    .sub-title {
-        font-size: 19px;
+
+    .title-wrapper {
+        .sub-title {
+            font-size: 19px;
+        }
     }
+
 }
 
 @media (min-width: 768px) {
-    .title {
-        font-size: 40px;
+    .title-wrapper {
+        .title {
+            font-size: 40px;
+
+        }
+
+        .sub-title {
+            font-size: 17px;
+            letter-spacing: 1px;
+        }
     }
 
-    .sub-title {
-        font-size: 30px;
-    }
 }
 
-
-@media (min-width: 768px) {
-    .sub-title {
-        font-size: 20px;
+@media (min-width: 1024px) {
+    .title-wrapper {
+        .title {
+            margin: 112px 0 5px;
+        }
     }
+
 }

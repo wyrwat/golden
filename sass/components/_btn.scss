@@ -12,6 +12,10 @@
     cursor: pointer;
 }
 
+.btn:focus {
+    outline: 0;
+}
+
 .btn:hover {
     background-color: $yellow-hover;
 }
