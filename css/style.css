@@ -780,10 +780,6 @@ template {
   }
 }
 
-.about-us-wrapper {
-  width: 100vw;
-}
-
 .about-us-wrapper .about-us-item {
   display: flex;
   justify-content: space-around;
@@ -866,7 +862,7 @@ template {
   }
   .about-us-wrapper .about-us-item {
     display: flex;
-    margin: 0 auto;
+    margin: 60px auto 0;
     width: 100%;
     margin-bottom: 40px;
   }
@@ -900,9 +896,6 @@ template {
 }
 
 @media (min-width: 1024px) {
-  .about-us-wrapper .about-us-item {
-    margin-bottom: 93px;
-  }
   .about-us-wrapper .about-us-item .description {
     width: 306px;
   }
@@ -1231,11 +1224,9 @@ template {
 }
 
 .footer-wrapper .social-media .fab {
-  width: 41px;
-  height: 41px;
   color: #fff;
   background-color: #000;
-  border: none;
+  border: 2 solid #000;
   margin: 0 10px;
 }
 
@@ -1252,6 +1243,10 @@ template {
   }
   .footer-wrapper .social-media .fab {
     margin-top: 30px;
+  }
+  .footer-wrapper .social-media .fab:hover {
+    color: #000;
+    background-color: #fff;
   }
 }
 

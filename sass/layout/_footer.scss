@@ -17,12 +17,13 @@
         justify-content: center;
 
         .fab {
-            width: 41px;
-            height: 41px;
+            // width: 41px;
+            // height: 41px;
             color: #fff;
             background-color: #000;
-            border: none;
+            border: 2 solid #000;
             margin: 0 10px;
+
         }
     }
 }
@@ -42,6 +43,11 @@
         .social-media {
             .fab {
                 margin-top: 30px;
+            }
+
+            .fab:hover {
+                color: #000;
+                background-color: #fff;
             }
         }
     }

@@ -1,6 +1,4 @@
 .about-us-wrapper {
-    width: 100vw;
-
     .about-us-item {
         display: flex;
         justify-content: space-around;
@@ -85,7 +83,7 @@
 
         .about-us-item {
             display: flex;
-            margin: 0 auto;
+            margin: 60px auto 0;
             width: 100%;
             margin-bottom: 40px;
 
@@ -131,10 +129,9 @@
     .about-us-wrapper {
 
         .about-us-item {
-            margin-bottom: 93px;
+            // margin-bottom: 93px;
 
             .description {
-
                 width: 306px;
             }
 
