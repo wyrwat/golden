@@ -1,0 +1,40 @@
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 5px auto 25px;
+
+    .fab {
+        width: 20px;
+        height: 16px;
+        color: #222222;
+        border: 3px solid #222222;
+        border-radius: 50%;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    .fa-twitter::before {
+        position: relative;
+        top: calc(50% - 8px);
+        left: calc(50% - 8px);
+    }
+
+    .fa-facebook-f::before {
+        position: relative;
+        top: calc(50% - 8px);
+        left: calc(50% - (8.25px / 2));
+    }
+
+    .fa-pinterest-p::before {
+        position: relative;
+        top: calc(50% - 8px);
+        left: calc(50% - 6px);
+    }
+
+    .fa-google-plus-g:before {
+        position: relative;
+        top: calc(50% - 8px);
+        left: calc(50% - 10px);
+    }
+}
