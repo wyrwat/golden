@@ -640,24 +640,6 @@ template {
       flex-direction: column;
 }
 
-.services .services-title {
-  text-align: center;
-}
-
-.services .services-title h1 {
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  font-size: 27px;
-  font-weight: 700;
-  margin: 40px 0 10px;
-}
-
-.services .services-title p {
-  color: grey;
-  font-family: "Droid Serif";
-  font-size: 16px;
-}
-
 .services .services-list-wrapper {
   display: -ms-flexbox;
   display: flex;
@@ -714,12 +696,6 @@ template {
 }
 
 @media (min-width: 768px) {
-  .services .services-title h1 {
-    font-size: 40px;
-  }
-  .services .services-title p {
-    font-size: 30px;
-  }
   .services .services-list-wrapper {
     margin: 0 125px 40px;
   }
@@ -738,13 +714,6 @@ template {
   .services {
     max-width: 1402px;
     margin: 0 auto;
-  }
-  .services .services-title h1 {
-    font-size: 40px;
-    margin: 120px 0 19px;
-  }
-  .services .services-title p {
-    font-size: 20px;
   }
   .services .services-list-wrapper {
     -ms-flex-direction: row;
@@ -783,10 +752,6 @@ template {
       flex-direction: column;
   margin: 0 auto;
   background-color: #f7f7f7;
-}
-
-.portfolio-wrapper .title-wrapper {
-  margin-top: 40px;
 }
 
 .portfolio-wrapper .gallery-wrapper {
@@ -841,9 +806,6 @@ template {
 }
 
 @media (min-width: 1024px) {
-  .portfolio-wrapper .title-wrapper {
-    margin-top: 120px;
-  }
   .portfolio-wrapper .gallery-wrapper {
     margin-bottom: 120px;
   }
@@ -851,10 +813,6 @@ template {
 
 .about-us-wrapper {
   width: 100vw;
-}
-
-.about-us-wrapper .title-wrapper {
-  margin-top: 40px;
 }
 
 .about-us-wrapper .about-us-item {
@@ -867,10 +825,12 @@ template {
 
 .about-us-wrapper .about-us-item .text-align-right {
   text-align: right;
+  margin-right: 7px;
 }
 
 .about-us-wrapper .about-us-item .text-align-left {
   text-align: left;
+  margin-left: 7px;
 }
 
 .about-us-wrapper .about-us-item .description {
@@ -918,9 +878,9 @@ template {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  margin: 0 auto 40px;
-  width: 182px;
-  height: 182px;
+  margin: 75px auto 40px;
+  width: 189px;
+  height: 189px;
   border: 7px solid #f1f1f1;
   border-radius: 50%;
   background-color: #fed136;
@@ -945,9 +905,6 @@ template {
         flex-direction: column;
     max-width: 1024px;
     margin: 0 auto;
-  }
-  .about-us-wrapper .title-wrapper {
-    margin-bottom: 40px;
   }
   .about-us-wrapper .about-us-item {
     display: -ms-flexbox;
@@ -987,9 +944,6 @@ template {
 }
 
 @media (min-width: 1024px) {
-  .about-us-wrapper .title-wrapper {
-    margin-top: 120px;
-  }
   .about-us-wrapper .about-us-item {
     margin-bottom: 93px;
   }
@@ -1044,10 +998,6 @@ template {
   background-color: #f9f9f9;
 }
 
-.team-wrapper .title-wrapper {
-  margin-top: 40px;
-}
-
 .team-wrapper .team-member-wrapper {
   display: -ms-flexbox;
   display: flex;
@@ -1090,9 +1040,6 @@ template {
 }
 
 @media (min-width: 1024px) {
-  .team-wrapper .title-wrapper {
-    margin-top: 120px;
-  }
   .team-wrapper .team-member-wrapper {
     -ms-flex-direction: row;
         flex-direction: row;
@@ -1300,6 +1247,10 @@ template {
   padding: 20px 20px;
 }
 
+.contact-us-wrapper .btn-message {
+  margin-bottom: 40px;
+}
+
 @media (min-width: 768px) {
   .contact-us-wrapper .form-wrapper {
     margin: 46px auto 29px;
@@ -1321,9 +1272,6 @@ template {
   }
   .contact-us-wrapper .form-wrapper form .contact input {
     height: 50px;
-  }
-  .contact-us-wrapper .btn-message {
-    margin-bottom: 40px;
   }
 }
 

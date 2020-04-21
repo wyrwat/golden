@@ -2,24 +2,6 @@
     display: flex;
     flex-direction: column;
 
-    .services-title {
-        text-align: center;
-
-        h1 {
-            text-transform: uppercase;
-            font-family: $main-font;
-            font-size: 27px;
-            font-weight: 700;
-            margin: 40px 0 10px;
-        }
-
-        p {
-            color: grey;
-            font-family: "Droid Serif";
-            font-size: 16px;
-        }
-    }
-
     .services-list-wrapper {
         display: flex;
         flex-direction: column;
@@ -87,16 +69,6 @@
 
 @media (min-width: 768px) {
     .services {
-        .services-title {
-            h1 {
-                font-size: 40px;
-            }
-
-            p {
-                font-size: 30px;
-            }
-        }
-
         .services-list-wrapper {
             margin: 0 125px 40px;
 
@@ -120,23 +92,11 @@
         max-width: 1402px;
         margin: 0 auto;
 
-        .services-title {
-            h1 {
-                font-size: 40px;
-                margin: 120px 0 19px;
-            }
-
-            p {
-                font-size: 20px;
-            }
-        }
-
         .services-list-wrapper {
             flex-direction: row;
             justify-content: space-around;
             margin: 45px auto 118px;
             max-width: 89%;
-
 
             .fas {
                 border: 3px solid $yellow;
