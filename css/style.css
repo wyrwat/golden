@@ -864,7 +864,6 @@ template {
     display: flex;
     margin: 60px auto 0;
     width: 100%;
-    margin-bottom: 40px;
   }
   .about-us-wrapper .about-us-item .description {
     max-width: 30%;
