@@ -28,8 +28,10 @@
                     height: 40px;
                     border: 1px solid #cccccc;
                     background-color: #ffffff;
-                    // margin: 0 0 20px;
+                    font-family: $main-font;
+                    font-size: 14px;
                     border-radius: 3px;
+                    padding-left: 20px;
                 }
 
                 input::placeholder {
@@ -38,7 +40,12 @@
                     font-size: 14px;
                     font-weight: 700;
                     text-transform: uppercase;
-                    padding-left: 20px;
+                    // padding-left: 20px;
+                }
+
+                input:focus {
+                    outline: 0;
+                    border: 3px solid $yellow;
                 }
             }
 
@@ -48,8 +55,14 @@
                 textarea {
                     height: 210px;
                     width: 240px;
+                    font-family: $main-font;
                     border-radius: 3px;
                     border: 1px solid #cccccc;
+                }
+
+                textarea:focus {
+                    outline: 0;
+                    border: 3px solid $yellow;
                 }
 
                 textarea::placeholder {
@@ -99,6 +112,9 @@
 
 @media(min-width: 1024px) {
     .contact-us-wrapper {
+        background-position: 5% 5%;
+        background-size: 100%;
+
         .form-wrapper {
             margin: 46px auto 29px;
 
@@ -114,7 +130,6 @@
                 }
 
                 .message {
-
                     textarea {
                         width: 350px;
                     }

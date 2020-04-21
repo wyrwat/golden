@@ -1165,7 +1165,10 @@ template {
   height: 40px;
   border: 1px solid #cccccc;
   background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
   border-radius: 3px;
+  padding-left: 20px;
 }
 
 .contact-us-wrapper .form-wrapper form .contact input::placeholder {
@@ -1174,7 +1177,11 @@ template {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-left: 20px;
+}
+
+.contact-us-wrapper .form-wrapper form .contact input:focus {
+  outline: 0;
+  border: 3px solid #fed136;
 }
 
 .contact-us-wrapper .form-wrapper form .message {
@@ -1184,8 +1191,14 @@ template {
 .contact-us-wrapper .form-wrapper form .message textarea {
   height: 210px;
   width: 240px;
+  font-family: "Montserrat", sans-serif;
   border-radius: 3px;
   border: 1px solid #cccccc;
+}
+
+.contact-us-wrapper .form-wrapper form .message textarea:focus {
+  outline: 0;
+  border: 3px solid #fed136;
 }
 
 .contact-us-wrapper .form-wrapper form .message textarea::placeholder {
@@ -1222,6 +1235,10 @@ template {
 }
 
 @media (min-width: 1024px) {
+  .contact-us-wrapper {
+    background-position: 5% 5%;
+    background-size: 100%;
+  }
   .contact-us-wrapper .form-wrapper {
     margin: 46px auto 29px;
   }
