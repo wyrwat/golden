@@ -25,11 +25,11 @@
                     </div>
                 </div>
                 <ul class="home">
-                    <li class="menu"> <a href="#">home</a></li>
-                    <li class="menu"><a href="#">services</a></li>
-                    <li class="menu"><a href="#">portfolio</a></li>
-                    <li class="menu"><a href="#">about</a></li>
-                    <li class="menu"><a href="#">contact</a></li>
+                    <li class="menu"><a class="go-to-services" href="#">services</a></li>
+                    <li class="menu"><a  class="go-to-portfolio" href="#">portfolio</a></li>
+                    <li class="menu"><a class="go-to-about" href="#">about us</a></li>
+                    <li class="menu"><a class="go-to-team" href="#">our team</a> </li>
+                    <li class="menu"><a class="go-to-contact" href="#">contact</a></li>
                 </ul>
             </nav>
             <div class="welcome">
@@ -39,7 +39,7 @@
             </div>
         </div>
     </div>
-    <div class="services">
+    <div data-section="go-to-services" class="services">
         <div class="title-wrapper">
             <h1 class="title">services</h1>
             <p class="sub-title">Proin iaculis purus consequat sem cure.</p>
@@ -68,7 +68,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-wrapper">
+    <div data-section="go-to-portfolio" class="portfolio-wrapper">
         <div class="title-wrapper">
             <h2 class="title">our portfolio</h2>
             <p class="sub-title">Proin iaculis purus consequat sem cure. </p>
@@ -118,7 +118,7 @@
             </div>
         </div>
     </div>
-    <div class="about-us-wrapper">
+    <div data-section="go-to-about" class="about-us-wrapper">
         <div class="title-wrapper">
             <h2 class="title">about us</h2>
             <p class="sub-title">Proin iaculis purus consequat sem cure. </p>
@@ -184,7 +184,7 @@
             <p>our story continues ...</p>
         </div>
     </div>
-    <div class="team-wrapper">
+    <div data-section="go-to-team" class="team-wrapper">
         <div class="title-wrapper">
             <h2 class="title">our amazing team</h2>
             <p class="sub-title">Proin iaculis purus consequat sem cure. </p>
@@ -239,7 +239,7 @@
         <img src="images/Tuts+.png" alt="tuts+">
         <img src="images/Microlancer_copy.png" alt="microlancer">
     </div>
-    <div class="contact-us-wrapper">
+    <div data-section="go-to-contact" class="contact-us-wrapper">
         <div class="title-wrapper">
             <h2 class="title title-white">contact us</h2>
             <p class="sub-title title-grey">Proin iaculis purus consequat sem cure. </p>
@@ -272,6 +272,16 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $('.jumbotron .home-wrapper nav ul li a').on('click', function () {
+            console.log(this);
+            const goToSection = "[data-section=" + $(this).attr('class') + "]";
+            $('body, html').animate({
+                scrollTop: $(goToSection).offset().top
+            })
+        })
+    </script>
 </body>
 
 </html>
