@@ -281,6 +281,12 @@
                 scrollTop: $(goToSection).offset().top
             })
         })
+
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() > 10) {
+                $('.jumbotron .home-wrapper .nav').addClass('nav-active');
+            } else $('.jumbotron .home-wrapper .nav').removeClass('nav-active');
+        })
     </script>
 </body>
 

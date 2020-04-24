@@ -17,7 +17,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 30px;
+            justify-content: center;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: .5s;
+            z-index: 1;
 
             .logo_container {
                 display: flex;
@@ -56,25 +63,22 @@
                         display: block;
                     }
                 }
-
-
             }
 
             .home {
-                margin-top: 15px;
                 list-style: none;
                 display: none;
                 width: 100%;
-                background-color: rgba(0, 0, 0, .6);
+                background-color: #222;
+                margin-top: 10px;
 
                 .menu {
-                    margin: 7px 0;
-
                     a {
                         font-family: $main-font;
                         text-decoration: none;
                         color: #fff;
                         font-size: 20px;
+                        line-height: 40px;
                         text-transform: uppercase;
                     }
                 }
@@ -85,13 +89,17 @@
             }
         }
 
+        .nav-active {
+            background-color: #222;
+        }
+
         .welcome {
             h2 {
                 font-family: $pharagraph;
                 color: #fff;
                 font-weight: 200;
                 font-size: 20px;
-                margin-top: 70px;
+                margin-top: 190px;
             }
 
             h1 {
@@ -163,22 +171,22 @@
     }
 }
 
-@media (orientation: landscape) and (max-width: 1023px) {
-    .jumbotron {
-        .home-wrapper {
-            .welcome {
-                h2 {
-                    font-size: 25px;
-                    margin-top: 30px;
-                }
-            }
+// @media (orientation: landscape) and (max-width: 1023px) {
+//     .jumbotron {
+//         .home-wrapper {
+//             .welcome {
+//                 h2 {
+//                     font-size: 25px;
+//                     margin-top: 30px;
+//                 }
+//             }
 
-            .welcome-show {
-                display: none;
-            }
-        }
-    }
-}
+//             .welcome-show {
+//                 display: none;
+//             }
+//         }
+//     }
+// }
 
 @media (min-width: 768px) {
     .jumbotron {
@@ -186,7 +194,7 @@
             .welcome {
                 h2 {
                     font-size: 33px;
-                    margin-top: 110px;
+                    margin-top: 290px;
                 }
 
                 h1 {
@@ -204,13 +212,16 @@
         .home-wrapper {
             .nav {
                 flex-direction: row;
+                // justify-content: space-between;
 
                 .logo_container {
                     display: flex;
-                    width: 100vw;
-                    justify-content: space-around;
+                    width: 50%;
+                    // justify-content: center;
+                    // margin: 0 auto;
 
                     .logo {
+                        text-align: center;
                         font-size: 40px;
                         margin-left: -200px;
                     }
@@ -222,9 +233,8 @@
 
                 .home {
                     display: flex;
-                    margin-top: 15px;
                     list-style: none;
-                    width: 100%;
+                    width: 50%;
                     background-color: transparent;
 
                     .menu {

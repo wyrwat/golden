@@ -369,7 +369,15 @@ template {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  margin-top: 30px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 10px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: .5s;
+  z-index: 1;
 }
 
 .jumbotron .home-wrapper .nav .logo_container {
@@ -419,15 +427,11 @@ template {
 }
 
 .jumbotron .home-wrapper .nav .home {
-  margin-top: 15px;
   list-style: none;
   display: none;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.jumbotron .home-wrapper .nav .home .menu {
-  margin: 7px 0;
+  background-color: #222;
+  margin-top: 10px;
 }
 
 .jumbotron .home-wrapper .nav .home .menu a {
@@ -435,6 +439,7 @@ template {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
+  line-height: 40px;
   text-transform: uppercase;
 }
 
@@ -442,12 +447,16 @@ template {
   display: block;
 }
 
+.jumbotron .home-wrapper .nav-active {
+  background-color: #222;
+}
+
 .jumbotron .home-wrapper .welcome h2 {
   font-family: "Roboto Slab", sans-serif;
   color: #fff;
   font-weight: 200;
   font-size: 20px;
-  margin-top: 70px;
+  margin-top: 190px;
 }
 
 .jumbotron .home-wrapper .welcome h1 {
@@ -488,20 +497,10 @@ template {
   }
 }
 
-@media (orientation: landscape) and (max-width: 1023px) {
-  .jumbotron .home-wrapper .welcome h2 {
-    font-size: 25px;
-    margin-top: 30px;
-  }
-  .jumbotron .home-wrapper .welcome-show {
-    display: none;
-  }
-}
-
 @media (min-width: 768px) {
   .jumbotron .home-wrapper .welcome h2 {
     font-size: 33px;
-    margin-top: 110px;
+    margin-top: 290px;
   }
   .jumbotron .home-wrapper .welcome h1 {
     font-size: 40px;
@@ -519,11 +518,10 @@ template {
   .jumbotron .home-wrapper .nav .logo_container {
     display: -ms-flexbox;
     display: flex;
-    width: 100vw;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    width: 50%;
   }
   .jumbotron .home-wrapper .nav .logo_container .logo {
+    text-align: center;
     font-size: 40px;
     margin-left: -200px;
   }
@@ -533,9 +531,8 @@ template {
   .jumbotron .home-wrapper .nav .home {
     display: -ms-flexbox;
     display: flex;
-    margin-top: 15px;
     list-style: none;
-    width: 100%;
+    width: 50%;
     background-color: transparent;
   }
   .jumbotron .home-wrapper .nav .home .menu {
@@ -593,7 +590,7 @@ template {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  margin: 40px 0 5px;
+  margin: 86px 0 5px;
 }
 
 .title-wrapper .title-white {
@@ -683,7 +680,7 @@ template {
 }
 
 .services .services-list-wrapper .web-security .fa-lock {
-  padding: 16px 21px;
+  padding: 17px 21px;
 }
 
 @media (min-width: 360px) {
